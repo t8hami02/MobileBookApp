@@ -40,7 +40,7 @@ public class ReadActivity extends AppCompatActivity {
 
     private String readTxt(){
 
-        InputStream inputStream = getResources().openRawResource(R.raw.lorembook1);
+        InputStream inputStream = getResources().openRawResource(R.raw.lorembook2);
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 
         int i;

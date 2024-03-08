@@ -1,5 +1,4 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import { getDatabase, ref } from "firebase/database";
 //import {getAuth} from 'firebase/auth';
 
@@ -15,11 +14,18 @@ const firebaseConfig = {
   };
   
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-const db = getDatabase();
-const reference = ref(db, 'users/' + userId);
+console.log('test from index.js');
 
-set(reference,{
-    username: name,
-    email: email,
-})
+/*
+function writeUserData(userId, name, email){
+    const db = getDatabase();
+    const reference = ref(db, 'Users/' + userId);
+
+    set(reference,{
+        username: name,
+        email: email,
+    });   
+}
+
+writeUserData("testUser", "testName", "testUserEmail@me.com");
+*/
